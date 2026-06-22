@@ -30,7 +30,7 @@ Vanilla HTML, CSS, and JavaScript — no build step, no dependencies, deployable
 ## Running it locally
 
 ```bash
-git clone https://github.com/<your-username>/ndpr-assessment.git
+git clone https://emma02179.github.io/NDPR-Compliance-Self-Assessment/
 cd ndpr-assessment
 ```
 
