@@ -2,7 +2,7 @@
 
 A lightweight, browser-based tool that helps organisations evaluate their compliance posture against the **Nigeria Data Protection Regulation (NDPR), 2019** — built to bridge the gap between regulatory text and practical, auditable controls.
 
-[Live demo](#) · *(replace with your GitHub Pages link once deployed)*
+[Live demo](#) · https://emma02179.github.io/NDPR-Compliance-Self-Assessment/
 
 ## Problem
 
@@ -30,7 +30,7 @@ Vanilla HTML, CSS, and JavaScript — no build step, no dependencies, deployable
 ## Running it locally
 
 ```bash
-git clone https://emma02179.github.io/NDPR-Compliance-Self-Assessment/
+git https://emma02179.github.io/NDPR-Compliance-Self-Assessment/
 cd ndpr-assessment
 ```
 
