@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NDPR Compliance Self-Assessment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dossier">
+
+  <!-- COVER -->
+  <section id="cover" class="screen screen--active">
+    <div class="cover__tab">CASE FILE / NDPR-SA</div>
+    <h1 class="cover__title">NDPR Compliance<br>Self-Assessment</h1>
+    <p class="cover__sub">A structured review against the Nigeria Data Protection Regulation (NDPR), 2019. Answer 18 control questions across 6 articles to receive a scored gap report with remediation priorities.</p>
+    <div class="cover__meta">
+      <div><span class="meta__label">Sections</span><span class="meta__value">06</span></div>
+      <div><span class="meta__label">Controls</span><span class="meta__value">18</span></div>
+      <div><span class="meta__label">Est. time</span><span class="meta__value">~8 min</span></div>
+    </div>
+    <button class="btn btn--primary" id="startBtn">Open Case File →</button>
+    <p class="cover__disclaimer">This tool supports informal self-review only. It is not legal advice and does not constitute a NITDA-recognised audit.</p>
+  </section>
+
+  <!-- ASSESSMENT -->
+  <section id="assessment" class="screen">
+    <div class="ledger-bar">
+      <div class="ledger-bar__track"><div class="ledger-bar__fill" id="progressFill"></div></div>
+      <div class="ledger-bar__label"><span id="sectionIndex">Article 1</span> of 6 — <span id="sectionName">Lawful Basis &amp; Consent</span></div>
+    </div>
+    <div id="questionRows" class="questions"></div>
+    <div class="nav-row">
+      <button class="btn btn--ghost" id="backBtn">← Back</button>
+      <button class="btn btn--primary" id="nextBtn">Next Article →</button>
+    </div>
+  </section>
+
+  <!-- REPORT -->
+  <section id="report" class="screen">
+    <div class="report__head">
+      <div class="stamp" id="stamp">
+        <div class="stamp__ring">
+          <div class="stamp__score" id="stampScore">--%</div>
+          <div class="stamp__verdict" id="stampVerdict">PENDING</div>
+        </div>
+      </div>
+      <div class="report__headtext">
+        <p class="report__eyebrow">Assessment Result</p>
+        <h2 id="overallLabel">Compliance Summary</h2>
+        <p class="report__date" id="reportDate"></p>
+      </div>
+    </div>
+
+    <div class="categories" id="categoryBreakdown"></div>
+
+    <div class="gaps">
+      <h3 class="gaps__title">Flagged Gaps &amp; Remediation</h3>
+      <div id="gapList" class="gaps__list"></div>
+    </div>
+
+    <div class="nav-row">
+      <button class="btn btn--ghost" id="restartBtn">↺ Start New Assessment</button>
+      <button class="btn btn--primary" id="printBtn">Print / Save Report</button>
+    </div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
